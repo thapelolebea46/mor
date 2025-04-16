@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cramers rule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--C-->
+    <div class="selection">
+        <p>SYSTEMS OF LINEAR EQUATIONS<br>CALCULATOR</p>
+        <br>
+        <br>        
+        <button id="twoBtn" onclick="show2();">2 UNKNOWNS</button>
+        
+        <button id="threeBtn" onclick="show3();">3 UNKNOWNS</button>
+    </div>
+        <div>
+
+        
+            <div class="systems1" id="sys1">
+                <p>SYSTEMS OF LINEAR EQUATIONS<br>2 UNKNOWNS</p>
+                <input type="number" name="a1" id="a1">X
+                <input type="number" name="b1" id="b1">Y=
+                <input type="number" name="c1" id="c1">
+                <br>
+                <input type="number" name="a2" id="a2">X
+                <input type="number" name="b2" id="b2">Y=
+                <input type="number" name="c2" id="c2">
+                <br>
+                <button type="submit" onclick="calculate2();">CALCULATE</button>
+                <div class="answers">
+                    <p id="xValue2"></p>
+                   
+                    <p id="yValue2"></p>
+                </div>
+            </div>
+            <div class="systems2" id="sys2">
+                <p>SYSTEMS OF LINEAR EQUATIONS<br>3 UNKNOWNS</p>
+                <input type="number" name="x1" id="x1">X
+                <input type="number" name="y1" id="y1">Y
+                <input type="number" name="z1" id="z1">Z=
+                <input type="number" name="k1" id="k1">
+                <br>
+                <input type="number" name="x2" id="x2">X
+                <input type="number" name="y2" id="y2">Y
+                <input type="number" name="z2" id="z2">Z=
+                <input type="number" name="k2" id="k2">
+                <br>
+                <input type="number" name="x3" id="x3">X
+                <input type="number" name="y3" id="y3">Y
+                <input type="number" name="z3" id="z3">Z=
+                <input type="number" name="k3" id="k3">
+                <br>
+                
+        
+                <button type="submit" onclick="calculate3();">CALCULATE</button>
+                <div class="answers">
+                    <p id="xValue3"></p>
+                    <p id="yValue3"></p>
+                    <p id="zValue3"></p>
+                </div>
+            </div>
+
+         </div>
+         <div><p>Copyright THAPELO LEBEA Portfolio | All Rights Reserved.</p></div>
+         <script src="script.js"></script>
+        </body>
+</html>

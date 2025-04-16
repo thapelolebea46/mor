@@ -1,0 +1,130 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #abc7e4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  align-content: flex-end;
+
+}
+
+.selection {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #2980b9;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+.systems1, .systems2 {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  box-sizing: border-box;
+  display: none;
+}
+
+h1, p {
+  font-family: 'Georgia', serif;
+  color: #2c3e50;
+}
+input, select {
+  padding: 12px 15px;
+  margin: 10px;
+  font-size: 16px;
+  width: 30px;
+  border: 2px solid #3274a0;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #ecf0f1;
+}
+
+button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #2980b9;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,select {
+  background-color: #8999a3;
+}
+
+/* Answer section */
+.answers {
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.answers p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Mathematical symbols and layout for inputs */
+.systems1 input,
+.systems2 input {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Grid layout for input sections */
+.systems1 div, .systems2 div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.sources{
+  margin: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  .systems1, .systems2 {
+    width: 100%;
+    padding: 20px;
+  }
+
+  input, select {
+    width: 60px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .answers p {
+    font-size: 16px;
+  }
+}
